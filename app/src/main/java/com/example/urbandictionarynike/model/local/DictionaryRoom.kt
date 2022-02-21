@@ -4,8 +4,9 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.urbandictionarynike.model.DefinitionItem
 
-@Database(entities = [], version = 1)
+@Database(entities = [DefinitionItem::class], version = 1)
 abstract class DictionaryRoom : RoomDatabase() {
 
     abstract fun getDao(): DictionaryDao

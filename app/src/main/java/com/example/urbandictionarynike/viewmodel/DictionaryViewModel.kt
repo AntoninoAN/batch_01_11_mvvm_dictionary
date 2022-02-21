@@ -41,4 +41,20 @@ class DictionaryViewModel(private val repo: Repository,
         job.cancel("ViewModel onCleared")
     }
 
+    fun sort(sortingState: SortingState) {
+
+        when(sortingState) {
+            SortingState.UP -> {
+
+            }
+            SortingState.DOWN -> {
+
+            }
+        }
+    }
+
+    enum class SortingState{
+        UP, DOWN
+    }
+
 }

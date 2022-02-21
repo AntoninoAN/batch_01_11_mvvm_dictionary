@@ -5,7 +5,7 @@ import retrofit2.http.GET
 import retrofit2.http.Header
 
 interface DictionaryApi {
-    @GET()
+    @GET(NetworkManager.END_POINT)
     //@Header("")
     suspend fun getDefinitions(): DefinitionResponse
 }

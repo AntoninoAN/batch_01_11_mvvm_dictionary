@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:title="@string/search_new_term"
+        android:id="@+id/search_term"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView"
+        />
+    <group android:id="@+id/sort">
+        <item android:title="@string/sort_up"
+            android:id="@+id/sort_up_menu"/>
+        <item android:title="@string/sort_down"
+            android:id="@+id/sort_down_menu"/>
+    </group>
+</menu>
